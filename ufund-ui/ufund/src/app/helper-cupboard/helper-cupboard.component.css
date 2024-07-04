@@ -1,0 +1,255 @@
+.wallet-popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.wallet-popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.n-button
+{
+    background-color: #e0ffb3;
+    border-style: none;
+    padding-top: 0.1%;
+    font-size: 15px;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 15%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: #cedd67;  
+}
+
+
+.action
+{
+    background-color: #98d5cf;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-stretch: extra-expanded;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 10ms;
+       
+}
+
+.action:hover
+{
+    background-color: aquamarine;
+}
+
+.inner
+{
+    font-family: Arial;
+    font-style:bold;
+    font-size:13px; 
+    
+}
+
+.title
+{
+    font-family:Impact;
+    color:black;
+}
+
+
+.n-heading
+{
+    padding-left:10%;
+    font-family:Arial;
+    color: black;
+    font-style: bold;
+    font-stretch: extra-expanded;
+    font-size: 20px;    
+}
+
+.big
+{
+    
+    font-family:Arial;
+    color: black;
+    font-style: bold;
+    font-size: 20px;    
+    padding-top:none;   
+}
+
+.info
+{
+    
+    font-family:Arial;
+    color: black;
+    font-style: bold;
+    font-size: 15px;    
+    padding-top:none;  
+}
+
+
+.funk
+{
+    background-color: #98d5cf;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.funk:hover
+{
+    background-color: aquamarine;
+}
+
+
+.funk2
+{
+    background-color: #b5c0be;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.funk2:hover
+{
+    background-color: aquamarine;
+}
+
+.bundle-button {
+    color: #3e2513;
+    border-color: #cedd67;
+    border-style: none;
+    border-radius:50px;
+    border-width: 5px;
+    padding:12px 24px;
+    margin-bottom: 0.5%; /* Add margin bottom to create spacing between buttons */
+    margin-right: 5%;
+    background-color: #e0ffb3;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    
+    font-family: Impact; 
+}
+
+
+.lilneed
+{
+    color: #3e2513;
+    border-color: black;
+    border-radius:5px;
+    border-style:none;
+    padding:12px 35px;
+    background-color: #f1ffdd;
+    font-size: 16px;
+    padding:10px 10px;
+    margin-bottom: 2%; /* Add margin bottom to create spacing between buttons */
+    margin-right: 2%;
+    display: inline-table;
+}
+
+.list
+{
+    
+    list-style-type: none !important;
+    padding: 0.01%;
+}
+
+.needs
+{
+    float:left;
+}
+
+.column {
+    -moz-column-count: 2; /* For FireFox */
+    -webkit-column-count: 2; /* For Safari/Chrome */
+    column-count: 2; /* For when the standard gets fully supported */
+    }
+
+
+    .scroll-box::-webkit-scrollbar {
+        width: 10px; /* Adjust width as needed */
+    }
+    
+    .scroll-box::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.2); /* Adjust scrollbar thumb color and opacity */
+        border-radius: 10px; /* Adjust scrollbar thumb border-radius */
+    }
+    
+    .scroll-box {
+        width: 50%; /* subtracting padding from both sides */
+        min-width: 200px;
+        /*width: 800px;*/
+        height: 400px;
+        overflow-y: auto;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .buffer{
+        padding: 5%;
+    }
+

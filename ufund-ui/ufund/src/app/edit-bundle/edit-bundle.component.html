@@ -1,0 +1,34 @@
+
+
+<div class="card-container">
+    <div class="card">
+        <div class="name">
+            <h3 >EditBudle</h3>
+            <span class="directive"><p>Modifying {{this.bundle.name}}</p></span>
+        </div>
+        <div class="card-body">
+            <div class="directive">
+                <label class="directive" for="name" class="label">Name:</label>
+                <input type="text" [(ngModel)]="newName" class="input-field" value={{bundle.name}}>
+            </div>
+            <span class="directive"><h4>Select Different Needs</h4>
+                <p>Curate a new list of needs.
+                    will default to previous if nothing is checked.</p></span>
+            
+            <div class="form-group">
+                <li *ngFor="let need of needs">
+                    <input type = "checkbox" (click)="checkAddNeeds(need)">
+                    {{need.name}}: costs ${{need.cost}}, {{need.quantity}} needed
+                </li>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="funk2" [routerLink]="['/cupboard']">Cancel</button>
+            <button class="funk" (click)="save()">Save</button>
+        </div>
+    </div>
+
+    <div class="error-box" id="errorBox">
+        <b id="errors">Errors:</b>
+    </div>
+</div>

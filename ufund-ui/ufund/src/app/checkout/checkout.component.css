@@ -1,0 +1,81 @@
+.funk
+{
+    background-color: #98d5cf;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.funk:hover
+{
+    background-color: aquamarine;
+}
+
+.funk2
+{
+    background-color: #b5c0be;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.funk2:hover
+{
+    background-color: aquamarine;
+}
+
+.title
+{
+    font-family:Arial;
+    color: black;
+    font-style: bold;
+    font-stretch: extra-expanded;
+    font-size: 15px;    
+}
+
+.info
+{
+    font-family:Arial;
+    color: black;
+    font-size: 15px;    
+    padding-top:none; 
+}
+
+
+tr,th {
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+    font-family: Arial;
+  }
+
+
+.filler
+{
+    padding:1%
+}

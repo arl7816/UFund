@@ -1,0 +1,85 @@
+<span class="info"><p>logged in as: {{username}}</p></span>
+
+<span class="big"><h2>Cupboard</h2></span>
+
+<div><label>Wallet: {{this.user.wallet}}</label></div>
+
+<div> <label class="info">{{test}}</label></div>
+<span>
+
+    <button class="funk" [routerLink]="['/basket']">My Basket</button>  
+
+
+
+    <button class="funk" (click)="toggleWalletPopup()">My Wallet</button>
+    <div id="walletPopup" class="wallet-popup">
+        <div class="wallet-popup-content">
+            <span class="close" (click)="closeWalletPopup()">&times;</span>
+            <p>Current Balance: {{this.user.wallet}}</p>
+            <label for="walletIncreaseAmount">Increase Amount: </label>
+            <input type="number" id="walletIncreaseAmount" [(ngModel)]="increaseAmount">
+            <button (click)="increaseWallet()">Increase</button>
+        </div>
+    </div>
+
+
+
+<button class="funk2" (click)="logOut()">Log out</button>
+</span>
+  
+
+
+
+
+
+
+<div><input type = "text" placeholder = "Search: " 
+(input)="getNeeds();getBundles()" [(ngModel)] = "search" class = "input-field"></div>
+
+<div class="heroes-menu">
+   <div class="column">
+
+    
+    <span class="n-heading"><P> Needs </P></span>
+    
+    <div class="scroll-box">
+
+        <ul class="needs">
+            <li class="list" *ngFor="let need of needs">
+        
+            <span class="n-list">
+                <button class="n-button"><ul class="button-nest"><span class="title"><p>{{need.name}}:</p></span> <span class="inner"><p>{{need.quantity}} still needed.  cost: ${{need.cost}}</p>
+                </span>
+                <button class="action" (click)="addSelect(need)">Add</button></ul> </button>
+                
+            </span>
+        </li>
+        </ul>
+    </div>
+
+
+    <span class="n-heading"><P> Bundles </P></span>
+    <div class="scroll-box">
+
+        <li class="list" *ngFor="let bundle of bundles">
+            <button class = "bundle-button" 
+                    [id] = "'button_' + bundle.id">
+                    <p>{{bundle.name}}</p>
+                    <ul class = "list"><li *ngFor="let need of bundle.list">
+                        <button class="lilneed">{{need.name}}: Costs ${{need.cost}}</button>
+        
+                    </li>
+                </ul>
+                        <button class="action" (click)="addBundle(bundle)">Add All Bundled Needs</button>
+            </button>
+        </li>
+    </div>
+
+</div>
+
+<div class="buffer"></div>
+    
+</div>
+
+
+

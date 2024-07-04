@@ -1,0 +1,83 @@
+.funk
+{
+    background-color: #98d5cf;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;   
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.funk:hover
+{
+    background-color: aquamarine;
+}
+
+.directive
+{
+    
+    font-family:Arial;
+    color: black;
+    font-style: bold;
+    font-size: 15px;    
+    padding-top:none;  
+}
+
+.name
+{
+    padding-left:10%;
+    font-family:Arial;
+    color: black;
+    font-style: bold;
+    font-stretch: extra-expanded;
+    font-size: 20px;    
+}
+
+.funk2
+{
+    background-color: #b5c0be;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.funk2:hover
+{
+    background-color: aquamarine;
+}
+
+
+.error-box {
+    color: black; /* Text color */
+    background-color: #ff0000bf; /* Red with 50% transparency */
+    font-size: 18px;
+    margin-left: 20px; /* Horizontal separation */
+    padding: 5px 10px; /* Padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    position: absolute;
+    width: 200px;
+    top: 355px;
+    right: 300px;
+}

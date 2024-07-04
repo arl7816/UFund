@@ -1,0 +1,44 @@
+<h1 class="main">
+    <img src="https://media.discordapp.net/attachments/931598159644352573/1218596988220735590/SWEN-Group-img.png?ex=661ab2e2&is=66083de2&hm=ced00e963c45e9eb680ec696185d04c108274b75a53f18d84179b124d158f997&=&format=webp&quality=lossless" 
+    alt="Group Logo" class="image">
+    {{title}} 
+    </h1>
+
+<body class="control">
+    <div>
+        <a class="tab" href="" style="padding-right: 20px;">About Us</a>
+    
+        <a class="tab" *ngIf="!isAdmin()" href = "/user-profile" style="padding-bottom: 10px;">Edit Profile</a>
+    
+        <a class="tab" *ngIf="!isAdmin()" href="/helper-cupboard" style="padding-left: 20px;">Cupboard</a>
+    
+        <a class="tab" *ngIf="isAdmin()" href="/cupboard" style="padding-left: 20px;">Cupboard</a> 
+    
+    </div>
+</body>
+
+<button class="toggle" (click)="toggleNotifs()">Notifications</button>
+<button *ngIf="notifs" class="notification" (click)="toggleNotificationPopup()">Most Recent Notification: <br>{{recentNotifcation}}</button>
+
+<div>
+    <div id="notifyPop" class="notification-popup">
+        <div class="notification-popup-content">
+            <label class = "label"><b>Notifications:</b></label>
+            <span class="close" (click)="closeNotificationPopup()">&times;</span>
+            <div class = "notification-list">
+                <p *ngFor="let notification of notifications"> <b>{{notification.title}}</b><br>{{notification.creation}}: {{notification.content}}</p>
+            </div>
+
+            <div *ngIf="isAdmin()">
+                <input class = "input-field" type = "text" [(ngModel)]="newTitle" placeholder="Title">
+                <textarea class = "input-field" placeholder="Notification content" 
+                style="display: inline-block; vertical-align: top; font-family: inherit;" [(ngModel)]="newNotification"></textarea>
+            </div>
+            <div *ngIf="isAdmin()">
+                <button class = "action-button" (click)="addNotification()">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

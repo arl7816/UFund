@@ -1,0 +1,53 @@
+.par {
+    font-family: Arial;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.header
+{
+    font-family: Arial;
+}
+
+.d 
+{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-family: Arial;
+    font-style: bold;
+}
+
+.head 
+{
+    font-family: Arial;
+    font-style: bold;
+}
+.news
+{
+    font-family: Arial;
+    font-style: none !important;
+    font-weight: normal !important;
+}
+
+.action
+{
+    
+        color: aliceblue;
+        border-radius: 5px;
+        border-color:aliceblue;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-style:bold;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        background-color: #4ba99d;
+        margin-right: 1%;
+        border-style: none;
+    
+    
+    
+}
+
+.action:hover {
+    background-color: #8f9ead; /* Darker Blue */
+}

@@ -1,0 +1,25 @@
+<div>
+    <div class="space">
+      <label class="directive" for="username">Username: {{username}}</label>
+    </div>
+
+    <div>
+        <input  required  type="username" [(ngModel)]="user.username" name="username" placeholder="Enter New Username">
+    </div>
+
+    <div class="space">
+        <label class="directive" for="password">Password: {{password}}</label>
+    </div>
+
+    <div>
+        <input required  type="password" [(ngModel)]="user.password" name="password" placeholder="Enter New Password">
+    </div>
+
+    <div>
+        <button class="funk" (click)="onUpdateUser()" type="submit">Update Profile</button>
+    </div>
+  
+    <div>
+        <button class="funk2" (click)="deleteUser()">Delete My Profile</button>
+    </div>
+</div>

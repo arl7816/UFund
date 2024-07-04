@@ -1,0 +1,68 @@
+<div class = "container">
+    
+   <span class="topbutton"><button class = "logout" (click)="logout()">Log Out</button></span>
+    
+    
+    <div class="buffer"></div>
+    <div class = "label"><h1>Needs</h1></div>
+
+    <div class = "NeedAttri">
+        
+            <button class="action-button" [routerLink]="['/addNeed']">Add</button>
+        <button class = "action-button" (click)="removeNeed()">Remove</button>  
+        <button class="action-button" [routerLink]="['/editNeed', selected]">Edit</button>
+        <div class = "label">
+            <p>Selected: <b>{{selectedName}}</b></p>
+        </div>
+        <div class="buffer"></div>
+        <span class="label"><p> Bundle Actions </p></span>
+        <p></p>
+        
+        <div>
+            <button class="action-button" [routerLink]="['/editBundle', bundleSelected]">Modify Bundle</button>
+            <button class="action-button" (click)="removeBundle()" >Delete Bundle</button>
+            <button class="action-button" [routerLink]="['/addBundle']">Bundle Items</button>
+        </div>
+
+        <span class="label"><p> <b>{{bundleName}} </b> selected</p></span>
+        
+    </div>
+
+    <div class="column">
+
+        <input type = "text" placeholder = "Search: " (input)="getNeeds();getBundles()" [(ngModel)] = "search" class = "input-field">
+        <div class="scroll-box">
+            <button class = "button" (click)="updateSelect(need.id, need.name)" *ngFor="let need of needs" 
+            [id]="'button_' + need.id">
+                <p>{{need.name}}:</p> 
+                <p>Quantity: {{need.quantity}}</p>
+                <p>Cost: ${{need.cost}}</p>
+                <p>Type: {{need.type}}</p>
+                <p>Surplus: {{need.surplus}}</p>
+            </button>
+            
+            <button class = "bundle-button" *ngFor="let bundle of bundles" (click)="updateBundleSelect(bundle.id,bundle.name)"
+            [id] = "'button_' + bundle.id">
+            <p>{{bundle.name}}</p>
+            <button class ="nested-button" *ngFor="let need of bundle.list">
+                <span class="nestedNeedTitle"><p>{{need.name}}</p> </span>
+                <div class="nestedNeedDetails"><p>Quantity: {{need.quantity}}</p>
+                    <p>Cost: ${{need.cost}}</p>
+                    <p>Type: {{need.type}}</p></div>
+                </button>
+            </button>
+        </div>
+    </div>
+
+    <div class="column">
+        
+        
+
+        
+        
+    </div>
+
+    <img src="https://media.discordapp.net/attachments/931598159644352573/1218596988220735590/SWEN-Group-img.png?ex=661ab2e2&is=66083de2&hm=ced00e963c45e9eb680ec696185d04c108274b75a53f18d84179b124d158f997&=&format=webp&quality=lossless" 
+    alt="Group Logo" class="image">
+
+</div>

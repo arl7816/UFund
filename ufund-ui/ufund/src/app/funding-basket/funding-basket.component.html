@@ -1,0 +1,30 @@
+<span class="head"><h2>{{username}}'s Funding Basket</h2></span>
+
+<div class="box">
+<ul class="needs">
+    <li *ngFor="let need of needs">
+
+    <span class="n-list">
+        <button class="n-button"><ul class="button-nest"><span class="title"><p>{{need.name}}:</p></span> <span class="inner"><p>{{need.quantity}} still needed.  cost: ${{need.cost}}</p>
+        </span>
+        <button class="action" (click)="remove(need)">Remove</button></ul> </button>
+        
+    </span>
+</li>
+</ul>
+    
+</div>
+
+<div> <p></p></div>
+
+
+<div class="ready"> <h4> Ready to check out?</h4>
+    </div>
+<div>
+    <button class="action2" (click)="toCheckout()">Checkout Now!</button>
+</div>
+
+<div>
+    <button class="action3" [routerLink]="['/helper-cupboard']">Back to Cupboard</button>
+    
+</div>

@@ -1,0 +1,130 @@
+.head
+{
+    font-family: Arial;
+    font-style:bold;
+    font-size: 13px;
+}
+
+
+.n-button
+{
+    background-color: #e0ffb3;
+    border-style: double;
+    padding-top: 0.1%;
+    font-size: 15px;
+    padding-bottom: 0.5%;
+    padding-left: 0%;
+    padding-right: 2.5%;
+    margin-bottom: 0.5%;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    border-radius: 50px;
+    border-width: 5px;
+    border-color: #cedd67;  
+}
+
+.inner
+{
+    font-family: Arial;
+    font-style:bold;
+    font-size:13px; 
+    
+}
+
+.action
+{
+    background-color: #98d5cf;
+    border-style: none ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-stretch: extra-expanded;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 10ms;
+       
+}
+
+.action:hover
+{
+    background-color: aquamarine;
+}
+
+.action2:hover
+{
+    background-color: aquamarine;
+
+}
+
+
+
+.button-nest  ul li
+{
+    list-style-type: none !important;
+    padding: 0.01%;
+}
+
+.title
+{
+    font-family:Impact;
+    color:black;
+}
+
+.ready
+{
+    font-family:Arial;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.action2
+{
+    background-color: #98d5cf;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}
+
+.action3:hover
+{
+    background-color: aquamarine;
+}
+
+.action3
+{
+    background-color: #b6c4c3;
+    border-style: none ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0.75%;
+    margin-top: 0.75%;
+    margin-right: 0.75%;
+    color: #343e68;
+    font-family: Arial;
+    font-style: bolder ;
+    font-size: 15px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 5ms;
+}

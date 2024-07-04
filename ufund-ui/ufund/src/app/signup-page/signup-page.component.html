@@ -1,0 +1,14 @@
+<div>
+    <span class="name"><h3>Sign Up</h3></span>
+      <form>
+        <div>
+          <label class="directive">Username</label>
+          <input  required  type="username" [(ngModel)]="signup.username" name="username">
+          <label class="directive">Password</label>
+          <input  required type="password" [(ngModel)]="signup.password" name="password">
+        </div>
+        <button class="funk" (click)="onSignUpPress()">Submit</button>
+        <span class="directive"><div>Already have an account? 
+            <a [routerLink]="['/login']">Login</a></div></span>
+      </form>
+  </div> 

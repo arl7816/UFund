@@ -1,0 +1,30 @@
+
+<div class="card-container">
+    <div class="card">
+        <div class="name">
+            <h3 >Add Bundle</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <label class="directive" for="name">Name:</label>
+                <input class = "input-field" type="text" id="name" [(ngModel)]="newName">
+            </div>
+    
+            <div class="info">
+                <li *ngFor="let need of needs">
+                   <span class="info"> <input class="info" type = "checkbox" (click)="updateChecked(need)">
+                    {{need.name}}: costs ${{need.cost}}, {{need.quantity}} needed</span>
+                </li>
+            </div>
+        </div>
+        <span class="directive"><div class="card-footer">
+            <button class="funk2" [routerLink]="['/cupboard']">Cancel</button>
+            <button class="funk" (click)="add()">Save</button>
+        </div>
+    </span>
+    </div>
+
+    <div class="error-box" id="errorBox">
+        <b id="errors">Errors:</b>
+    </div>
+</div>

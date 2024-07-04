@@ -1,0 +1,59 @@
+
+<div class="checkout-container">
+    <label class="title"><h2>Your Funding Basket</h2></label>
+    <label class="info">Wallet: ${{user.wallet}}</label>
+    <div class="info" *ngIf="basketItems.length === 0"> 
+      Your basket is empty.
+    </div>
+
+    <div class="info" *ngIf="checkoutSuccess" class="checkout-success-message">
+      {{ successMessage }}
+    </div>
+    
+
+    <div *ngIf="basketItems.length > 0">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Cost</th>
+            <th>Quantity</th>
+            <th>Global Total</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="cells">
+          <tr *ngFor="let item of basketItems">
+            <td>{{ item.name }}</td>  
+            <td>{{ item.cost | currency }}</td>
+            <td>
+              {{ item.quantity }}
+            </td>
+            <td>{{ item.cost * item.quantity | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <div class="filler"></div>
+      <!-- Total Amount -->
+      <div class="info">
+        <strong>Total amount:</strong> {{ totalAmount | currency }}
+      </div>
+      
+      <!-- Checkout Button -->
+      <div class="checkout-button">
+        <button class="funk" (click)="checkout()" [disabled]="!basketItems.length">Checkout</button>
+        
+        </div>
+        
+    <span></span>
+  </div>
+
+
+  <div></div>
+
+  <button class="funk2" [routerLink]="['/basket']">Back</button>
+  
+  
+
+  
